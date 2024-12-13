@@ -1,0 +1,38 @@
+.cartEmpty{
+  display: flex;
+
+  justify-content: center;
+  margin: 30px;
+  padding: 30px;
+}
+.cart-title{
+    font-family: Josefin Sans;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.015em;
+    text-align:center;
+    color: #000000;
+}
+.cart-empty-btn{
+    display: flex;
+    text-align: center;
+align-items: center;
+    background-color: #ff4081;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  
+    margin: 30px;
+}
+.cart-btn{
+    display: flex;
+    justify-content: center;
+}

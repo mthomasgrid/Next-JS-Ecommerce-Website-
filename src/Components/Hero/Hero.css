@@ -1,0 +1,122 @@
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  background: #f2f0ff;
+  height: 670px;
+}
+.container {
+  overflow: hidden;
+}
+.carousel-slide {
+  display: flex;
+  width: 100%;
+}
+.text-content {
+  padding: 20px;
+  align-content: center;
+  width: 32%;
+}
+.subheading {
+  color: #ff4081;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  font-family: Josefin Sans;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0.015em;
+  text-align: left;
+  color: #101750;
+}
+.description {
+  color: #666;
+  margin: 20px 0;
+  line-height: 1.6;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.hero-button {
+  display: inline-block;
+  background-color: #ff4081;
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: Josefin Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+}
+
+.image-content {
+  position: relative;
+}
+
+.headphones {
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  padding: 15px;
+  top: 7px;
+}
+.badge {
+  position: absolute;
+  top: 6%;
+  right: -45px;
+  background-color: #6200ea;
+  color: #fff;
+  padding: 40px;
+  border-radius: 50%;
+  font-size: 1rem;
+  z-index: 2;
+  font-family: Josefin Sans;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.015em;
+  text-align: center;
+}
+.ellipse60,
+.ellipse61 {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+.ellipse61 {
+  width: 550px;
+  height: 580px;
+  top: 25px;
+  left: 25px;
+  background: #e5e0fc;
+  opacity: 1;
+}
+.ellipse60 {
+  width: 580px;
+  height: 580px;
+  top: 45px;
+  left: -30px;
+  background: #8a8fb9;
+  opacity: 0.7;
+}
+.left-image {
+  width: 350px;
+}

@@ -1,0 +1,138 @@
+header {
+  height: 120px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  height: 72px;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.navbar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  gap: 32px;
+}
+.logo img {
+  height: auto;
+  margin-right: 50px;
+}
+.menu {
+  display: flex;
+  height: 20px;
+  
+  gap: 32px;
+  font-family: Josefin Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+}
+.navbar-right-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 328px;
+  height: 40px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.navbar-right-wrapper input[type="text"] {
+  width: 242px;
+  height: 16px;
+  border: none;
+  padding: 10px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #8a8fb9;
+}
+input:focus {
+  outline: none;
+}
+.navbar-right-wrapper .navbar-btn {
+  width: 52px;
+  height: 36px;
+  margin: 2px;
+  background-color: #fb2e86;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*TopBar Code*/
+.topbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #7e33e0;
+  color: white;
+  height: 48px;
+}
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.topbar-left__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  font-family: Josefin Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.topbar-right__content {
+  display: flex;
+  height: 20px;
+  top: 28px;
+  left: 487px;
+  gap: 32px;
+  font-family: Josefin Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.topbar-right__content li {
+  list-style: none;
+}
+.topbar-right__content a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 5px;
+}
+.topbar-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active-link {
+  color: #ff4081;
+}

@@ -1,0 +1,72 @@
+.products_container{
+    text-align: center;
+}
+.card{
+    width: 312px;
+    height: 368px;
+    box-shadow: 8px 24px 32px -16px #10175026;
+    cursor: pointer;
+    text-decoration: none;
+}
+.related-card_details{
+    display: flex;
+    gap: 30px;
+    justify-content: center;    
+    margin: 40px;   
+    
+}
+.products{
+    width: 312px;
+    height: 232px;
+}
+.card_title{
+    text-align: center;
+    margin: 15px;
+    color: #FB2E86;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 16px;
+}
+.card_code{
+    margin-top: 20px;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color:#8A8FB9;
+}
+.card_price{
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: #101750;
+
+}
+
+
+.card:hover {
+    transform: translateY(-40px); 
+    transition: transform 0.4s ease, box-shadow 0.3s ease; 
+    box-shadow: 8px 32px 48px -12px rgba(16, 23, 80, 0.26); 
+}
+
+
+
+.related__products{
+    padding-left: 90px;
+    text-align: left;
+    justify-content: center;
+    font-family: Josefin Sans;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.015em;
+    color: #101750;
+   
+}

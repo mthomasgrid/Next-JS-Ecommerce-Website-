@@ -1,0 +1,55 @@
+.products_container{
+    text-align: center;
+}
+.card{
+    box-shadow: 8px 24px 32px -16px #10175026;
+    cursor: pointer;
+}
+.card_details-card3{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 70px;
+}
+.products-card3{
+    width: 272px;
+    height: 232px;
+    border-radius: 5px;
+}
+.card_title-card3{
+    text-align: center;
+    margin: 15px;
+    color: #FB2E86;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+
+.card:hover {
+    transform: translateY(-40px); 
+    transition: transform 0.4s ease, box-shadow 0.3s ease; 
+    box-shadow: 8px 32px 48px -12px rgba(16, 23, 80, 0.26); 
+}
+
+
+.price-container-card3{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+
+.trending__products{
+    font-family: Josefin Sans;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.015em;
+    text-align: center;
+    color: #101750;
+    margin-top: 80px;
+}

@@ -1,0 +1,76 @@
+.banner{
+   
+    height: 570px;
+    background-color: #F1F0FF;
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.banner-left{
+    width: 640px;
+    height: 337px;
+}
+ .banner-Sofa{
+    position: absolute;
+    top: -60;
+   left: 12px;
+} 
+.ellipse61-banner{
+    width: 450px;
+    height: 380px;
+    background: #e5e0fc;
+    align-items: center;
+    opacity: 1;
+    border-radius:50%; 
+    z-index: 1;
+}
+
+
+
+
+/*RIGHT SIDE*/
+.banner-right{
+    width: 534px;
+    height: 337px;
+}  
+.right-content{
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.015em;
+    text-align: left;
+    color: #101750;
+    padding: 20px;
+}
+.banner-description{
+    list-style: none;
+    padding: 20px;
+}
+.banner-description li{
+    height: 40px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    align-items: center;
+    color: #8A8FB9;
+}
+.cart-banner-btn{
+    background-color: #ff4081;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 20px;
+}

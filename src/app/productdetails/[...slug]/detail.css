@@ -1,0 +1,97 @@
+.productdetails-container{
+    display: flex;
+    justify-content: center;
+    height: 638px;
+    gap: 50px;
+    align-items: center;
+    
+}
+.productDetails-left{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+
+
+.middle{
+    width: 528px;
+    height: 438px;
+    top: 100px;
+    left: 528px;
+    border-radius: 8px;
+
+}
+.productdetails-right{
+    height: 250px;
+}
+
+.productDetails-name{
+    font-family: Josefin Sans;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.015em;
+    text-align: left;
+    color: #0D134E;
+
+    
+}
+
+.productDetails-description{
+font-family: Lato;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+color: #A9ACC6;
+margin-top: 20px;
+
+}
+
+.productDetails-price{
+    margin-top: 20px;
+   
+}
+.productDetails-current-price{
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #101750;
+    padding-right: 30px;
+}
+.productDetails-original-price{
+    color: #FB2E86;
+    font-family: Josefin Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 2px;
+}
+.productDetails-cart-btn{
+    display: inline-block;
+    background-color: #ff4081;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    
+}
+.productDetails-cart{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 30px;
+}
+.favorite{
+    margin-left: 20px;
+    cursor: pointer;
+}
