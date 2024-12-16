@@ -124,7 +124,7 @@ const Header = () => {
               src="/assets/Hekto.png"
               alt="Website Logo"
               width={100}
-              height={100}
+              height={40}
             />
           </div>
           <ul className="menu">

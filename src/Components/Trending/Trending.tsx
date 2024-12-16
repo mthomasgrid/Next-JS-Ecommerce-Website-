@@ -1,76 +1,34 @@
-import Image from 'next/image';
-import './Trending.css';
+import Image from "next/image";
+import "./Trending.css";
+import { fetchProducts, Product } from "../types";
+import Link from "next/link";
 
-interface Rating {
-    value: number;  
-    votedCount: number;  
-}
-  
-interface Product {
-    id: string;  
-    name: string;  
-    brand: string;  
-    category: string;  
-    price: number;  
-    wasPrice: number;  
-    isSale: boolean;  
-    isFeatured: boolean; 
-    discountPercentage: number;  
-    description: string;  
-    rating: Rating;  
-    createdAt: string;  
-    specialOffer: string | null;  
-    colors: string[];  
-    soldTimes: number;  
-    code: string;  
-    thumbnail: string;  
-    imageSet: string;  
-}
-
-
-
-
- export  default async function TrendingProducts(){
-
-    //const router = useRouter();
-
-    // const handleClick = (id:string) => {
-    //     //         router.push(`/productdetails/${id}`);
-    //     //     };
-    try {
-        const response = await fetch("http://localhost:8080/products");
-        const products: Product[] = await response.json();
-        return (
-            <div className="products_container">
-           <h2 className='trending__products'>Trending Products</h2>
-             <div className="card_details-card3">
-                 {products.slice(21,25).map((product) => (
-                    <div
-                        key={product.id}
-                        className="card"
-                        
-                    >
-                         <Image
-                            src={product.thumbnail}
-                            alt={`Product -- ${product.category}`}
-                            width={150}
-                            height={150}
-                            className="products-card3"
-                        /> 
-                        <h3 className="card_title-card3">{product.category}</h3>
-                        <div className="price-container-card3">
-                            <span className="current-price">${product.price}</span>
-                            <span className="original-price">${product.wasPrice}</span>
-                        </div>
-                    </div>
-                ))}
+export default async function TrendingProducts() {
+  const products: Product[] = await fetchProducts();
+  //await new Promise((resolve) => setTimeout(resolve, 9000));
+  return (
+    <div className="products_container">
+      <h2 className="trending__products">Trending Products</h2>
+      <div className="card_details-card3">
+        {products.slice(21, 25).map((product) => (
+          <Link href={`/productdetails/${product.id}`} key={product.id} className="card">
+            <Image
+              src={product.thumbnail}
+              alt={`Product -- ${product.category}`}
+              width={150}
+              height={150}
+              className="products-card3"
+            />
+            <h3 className="card_title-card3">{product.category}</h3>
+            <div className="price-container-card3">
+              <span className="current-price">${product.price}</span>
+              <span className="original-price">${product.wasPrice}</span>
             </div>
-        </div>
-        )}
-        catch(e){
-            console.log(e)
-        }
- }
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 
- //onClick={() => handleClick(product.id)}

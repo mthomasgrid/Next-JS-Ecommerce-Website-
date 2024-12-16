@@ -6,7 +6,7 @@ import './Hero.css'
 import { useRouter } from 'next/navigation';
 
 const Hero = () => {
-
+ 
 const router=useRouter();
 
 const products=()=>{
@@ -46,7 +46,7 @@ const products=()=>{
 
 
             <div className="image-content">
-              <Image src="/assets/BannerImages/Headphone.png" alt="Headphones" className="headphones" width={519} height={688} />
+              <Image src="/assets/BannerImages/Headphone.png" alt="Headphones"  priority className="headphones" width={519} height={620} />
               <div className="badge">50% <br /> Off</div>
               <div className="ellipse60"></div>
               <div className="ellipse61"></div>

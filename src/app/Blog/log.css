@@ -1,6 +1,6 @@
 
 .blog-section{
-    padding: 7rem;
+    padding: 4rem;
 }
 .blog-title{
     text-align: center;
@@ -11,18 +11,28 @@
     letter-spacing: 0.015em;
     color: #101750;
 }
-.blog-content{
+.blog-content {
     margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+    justify-items: center; 
 }
-.article-wrapper{
+.article-wrapper {
     box-shadow: 8px 64px 80px -16px #10175026;
     width: 416px;
     height: 495px;
-    margin: 10px;
     border-radius: 20px;
+    background-color: #fff; 
+    cursor: pointer;
 }
+
+.article-wrapper:hover {
+    transform: translateY(-20px); 
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    box-shadow: 8px 32px 48px -12px rgba(16, 23, 80, 0.26);
+}
+
 .BlogImage{
     box-shadow: 8px 64px 80px -16px #10175026;
     border-radius: 10px;

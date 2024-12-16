@@ -1,0 +1,71 @@
+.product-card{
+    display: flex;
+    gap: 40px;
+    padding: 2rem;
+    width: 856px;
+    box-shadow: 8px 24px 32px -16px #10175026;
+    margin: 1rem;
+    
+}
+.product-card:hover{
+    transform: translateY(-10px); 
+    transition: transform 0.4s ease, box-shadow 0.3s ease; 
+    box-shadow: 8px 32px 48px -12px rgba(16, 23, 80, 0.26); 
+}
+
+.product-card-right{
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.product-card-right-title{
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color:#101750;
+}
+.product-card-right-description{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #8A8FB9;
+    margin-top: 10px;
+
+}
+.product-card-right-price{
+    margin-top: 10px;
+}
+.product-card-right-current-price{
+font-family: Josefin Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-align: center;
+color:#101750;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.product-card-right-original-price{
+font-family: Josefin Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+text-align: center;
+color: #8A8FB9;
+}
+
+.product-card-right-original-price span{
+    margin-right: 30px;
+}
+
+
+.product-card-right-icon{
+    cursor: pointer;
+    margin-top: 40px;
+}

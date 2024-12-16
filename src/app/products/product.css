@@ -1,0 +1,38 @@
+.product-lister{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 4rem;
+    
+}
+
+.product-title{
+font-family: Josefin Sans;
+font-size: 52px;
+font-weight: 700;
+line-height: 64px;
+letter-spacing: 0.015em;
+text-align: center;
+color: #101750;
+padding-top: 3rem;
+
+}
+a{
+    text-decoration: none;
+}
+
+.product-links ul{
+    display: flex;
+    text-align: center;
+   
+    justify-content: center;
+    list-style: none;
+    padding-top: 1rem;
+    gap: 40px;
+    cursor: pointer;
+}
+
+.product-links ul :hover{
+color:  #FB2E86;
+
+}

@@ -1,0 +1,41 @@
+.sidebar-section{
+    width:164px;
+    height: 1,303px;
+    top: 436px;
+    left: 304px;
+    gap: 48px;
+    padding: 2rem;
+    margin: 10px;
+}
+.sidebar-title{
+font-family: Josefin Sans;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+color: #101750;
+margin-top: 25px;
+
+
+}
+
+.sidebar-brand{
+    margin-top: 15px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #8A8FB9;
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar-discount{
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #101750;
+    margin-top: 20px;
+}

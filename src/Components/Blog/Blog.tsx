@@ -1,77 +1,74 @@
-import './Blog.css'
-import Image from 'next/image'
+import './Blog.css';
+import Image from 'next/image';
 
-export default function Blog(){
-    return(
+
+interface BlogData {
+  id: number;
+  title: string;
+  author: string;
+  date_published: string;
+  content: string;
+}
+
+export default async function Blog() {
+  
+
+  try {
+    const response = await fetch('https://dummyapi.online/api/blogposts');
+    let blogDatas: BlogData[] = []; 
+    blogDatas = await response.json();
+    //await new Promise((resolve) => setTimeout(resolve, 5000)); 
+
+    return (
         <>
-            <section className="blog-section">
-                <h2 className='blog-title'>Latest Blog</h2>
-                <article className='blog-content'>
-                    <div className="article-wrapper">
-                        <figure>
-                            <Image src="/assets/BlogImages/image1.jpeg" alt=" Blog Image" width={416} height={255} className='BlogImage'/>
-                        </figure>
-                        <div className="article-body">
-                            {/* <div className="article-details">
+          <section className="blog-section">
+            <h2 className="blog-title">Latest Blog</h2>
+            <article className="blog-content">
+              {blogDatas.slice(0,3).map((blogData) => (
+                <div className="article-wrapper" key={blogData.id}>
+                  <figure>
+                    <Image
+                      src="/assets/BlogImages/image1.jpeg"
+                      alt="Blog Image"
+                      width={416}
+                      height={255}
+                      className="BlogImage"
+                    />
+                  </figure>
 
-                            </div> */}
-                            <p className='article-subheading'>Top esssential Trends in 2021
-                            </p>
-                            <p className='article-description'>Nullam nec fringilla erat, ac dapibus nunc. Integer semper ipsum in fermentum aliquam. </p>
-                            <a href="#" className="read-more">
-                            Read more 
-                            </a>
+                    <div className="article-users">
+                        <div className="users-name">
+                            {blogData.author}
                         </div>
+                        <div className="users-name">{blogData.date_published}</div>
                     </div>
 
 
-                    <div className="article-wrapper">
-                        <figure>
-                            <Image src="/assets/BlogImages/image1.jpeg" alt=" Blog Image" width={416} height={255} className='BlogImage' />
-                        </figure>
-                        <div className="article-body">
-                            {/* <div className="article-details">
 
-                            </div> */}
-                            <p className='article-subheading'>Top esssential Trends in 2021
-                            </p>
-                            <p className='article-description'>Nullam nec fringilla erat, ac dapibus nunc. Integer semper ipsum in fermentum aliquam. </p>
-                            <a href="#" className="read-more">
-                            Read more 
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div className="article-wrapper">
-                        <figure>
-                            <Image src="/assets/BlogImages/image1.jpeg" alt=" Blog Image" width={416} height={255} className='BlogImage' />
-                        </figure>
-                        <div className="article-body">
-                            {/* <div className="article-details">
-
-                            </div> */}
-                            <p className='article-subheading'>Top esssential Trends in 2021
-                            </p>
-                            <p className='article-description'>Nullam nec fringilla erat, ac dapibus nunc. Integer semper ipsum in fermentum aliquam. </p>
-                            <a href="#" className="read-more">
-                            Read more 
-                            </a>
-                        </div>
-                    </div>
-
-
-                    
-                </article>
-
-                
-
-
-
-                
-
-
-            </section>
+                  <div className="article-body">
+                    <p className="article-subheading">{blogData.title}</p>
+                    <p className="article-description">
+                      {blogData.content.substring(0, 120)}.
+                    </p>
+                   
+                  </div>
+                  <a href="#" className="read-more">
+                      Read more
+                    </a>
+                </div>
+              ))}
+            </article>
+          </section>
         </>
-    )
+      );
+
+
+
+
+  } 
+  catch (e) {
+    console.error(e);
+  }
+
+  
 }

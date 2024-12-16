@@ -10,20 +10,28 @@ import Hero from "@/Components/Hero/Hero";
 import NewsLetter from "@/Components/NewsLetter/NewsLetter";
 
 
-
+ import { Suspense } from "react";
+ import FeatureSkeleton from "@/Components/Featured/loading";
 
 export default function HomePage(){
     return(
         <>
-        <Hero/>
-         <FeaturedProducts />
-        <LatestProducts/>
-        <Unique/>
-        <TrendingProducts/>
-       <DiscountItem/> 
-         <Categories/>
-        <NewsLetter/>
-        <Blog/>   
+            
+
+                <Hero/>
+
+              <Suspense fallback={<FeatureSkeleton/>}> 
+                    <FeaturedProducts />
+            </Suspense> 
+         
+                <LatestProducts/>
+                <Unique/>
+                <TrendingProducts/>
+                <DiscountItem/> 
+                <Categories/>
+                <NewsLetter/>
+                <Blog/>   
+       
         </>
     )
 }
