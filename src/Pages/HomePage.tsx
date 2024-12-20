@@ -9,29 +9,30 @@ import DiscountItem from "@/Components/Discount/Discount";
 import Hero from "@/Components/Hero/Hero";
 import NewsLetter from "@/Components/NewsLetter/NewsLetter";
 
+//Importing Skeleton for Components
+import { Suspense } from "react";
+import FeatureSkeleton from "@/Components/Featured/loading";
+import LoadingSkeleton from "@/Components/Latest/loading";
 
- import { Suspense } from "react";
- import FeatureSkeleton from "@/Components/Featured/loading";
+export default function HomePage() {
+  return (
+    <>
+        <Hero />
 
-export default function HomePage(){
-    return(
-        <>
-            
+        <Suspense fallback={<FeatureSkeleton />}>
+            <FeaturedProducts />
+        </Suspense>
 
-                <Hero/>
+        <Suspense fallback={<LoadingSkeleton />}>
+            <LatestProducts />
+        </Suspense>
 
-              <Suspense fallback={<FeatureSkeleton/>}> 
-                    <FeaturedProducts />
-            </Suspense> 
-         
-                <LatestProducts/>
-                <Unique/>
-                <TrendingProducts/>
-                <DiscountItem/> 
-                <Categories/>
-                <NewsLetter/>
-                <Blog/>   
-       
-        </>
-    )
+        <Unique />
+        <TrendingProducts />
+        <DiscountItem />
+        <Categories />
+        <NewsLetter />
+        <Blog />
+    </>
+  );
 }

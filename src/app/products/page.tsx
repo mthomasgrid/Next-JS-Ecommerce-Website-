@@ -1,37 +1,14 @@
-import ProductCard from '@/Components/ProductCard/ProductCard'
-import Sidebar from '@/Components/sidebar/Sidebar'
-import React from 'react'
 
 
-import './product.css'
-import Link from 'next/link'
+import "./product.css";
+import ProductsPage from "@/Pages/ProductsPage";
 
 const Productspage = () => {
   return (
     <>
-    <h1 className='product-title'>Products</h1>
-    <div className="product-links">
-     
-     
-      <ul>
-        <li> <Link href="/">Home</Link></li>
-        <li > <Link href="/products">Products</Link></li>
-      </ul>
-   
-    
+     <ProductsPage/>
+     </>
+  );
+};
 
-
-    </div>
-    
-    <div className="product-lister">
-    <Sidebar/> 
-    <ProductCard/>
-
-    </div>
-      
-    
-    </>
-  )
-}
-
-export default Productspage
+export default Productspage;

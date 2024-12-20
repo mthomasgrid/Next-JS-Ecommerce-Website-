@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default async function TrendingProducts() {
   const products: Product[] = await fetchProducts();
-  //await new Promise((resolve) => setTimeout(resolve, 9000));
+ 
   return (
     <div className="products_container">
       <h2 className="trending__products">Trending Products</h2>
@@ -18,6 +18,7 @@ export default async function TrendingProducts() {
               width={150}
               height={150}
               className="products-card3"
+              priority
             />
             <h3 className="card_title-card3">{product.category}</h3>
             <div className="price-container-card3">
