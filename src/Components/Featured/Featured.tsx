@@ -24,7 +24,7 @@ export default async function FeaturedProducts() {
                 width={150}
                 height={150}
                 className="products"
-                priority
+                loading="lazy"
               />
               <h3 className="card_title">{product.category}</h3>
               <p className="card_code">{product.code}</p>

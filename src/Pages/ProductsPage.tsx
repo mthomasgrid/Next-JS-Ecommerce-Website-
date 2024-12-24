@@ -4,6 +4,7 @@ import ProductCard from "@/Components/ProductCard/ProductCard";
 import Sidebar from "@/Components/sidebar/Sidebar";
 import { fetchProducts, Product } from "@/Components/types";
 import Link from "next/link";
+import Image from "next/image";
 
 export default async function ProductsPage(){
 
@@ -49,27 +50,13 @@ const products: Product[] = await fetchProducts();
                     </div>
 
 
-                    <div className="select-container">
-                        <span className="select-option">VIEW</span>
-                        <select>
-                        <option value="price-high-to-low">LIST VIEW</option>
-                        <option value="price-low-to-high">GRID VIEW</option>
-                        </select>
-                    </div>
+                    
 
                     <div className="view-container">
                         <span className="view-option">View</span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="2" y="2" width="4" height="4" rx="1" stroke="#101750"/>
-                            <rect x="10" y="2" width="4" height="4" rx="1" stroke="#101750"/>
-                            <rect x="2" y="10" width="4" height="4" rx="1" stroke="#101750"/>
-                            <rect x="10" y="10" width="4" height="4" rx="1" stroke="#101750"/>
-                        </svg>
+                        <Image src="/icons/listView.svg" alt="List View" width={16} height={16}/>
 
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="2" y="2" width="12" height="4" rx="1" stroke="#101750"/>
-                            <rect x="2" y="10" width="12" height="4" rx="1" stroke="#101750"/>
-                        </svg>
+                        <Image src="/icons/gridView.svg" alt="Grid View" width={16} height={16}/>
 
                     </div>
 

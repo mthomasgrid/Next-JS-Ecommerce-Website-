@@ -24,6 +24,7 @@ const Hero = () => {
                 className="hanging-light"
                 width={387}
                 height={387}
+                loading="lazy"
               />
             </div>
 
@@ -42,10 +43,11 @@ const Hero = () => {
               <Image
                 src="/assets/BannerImages/Headphone.png"
                 alt="Headphones"
-                priority
+               
                 className="headphones"
                 width={519}
                 height={620}
+                loading="lazy"
               />
               <div className="badge">
                 50% <br /> Off

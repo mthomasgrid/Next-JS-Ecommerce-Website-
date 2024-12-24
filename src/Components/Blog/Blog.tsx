@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './Blog.css';
 import Image from 'next/image';
 
@@ -17,6 +18,7 @@ export default async function Blog() {
     const response = await fetch('https://dummyapi.online/api/blogposts');
     let blogDatas: BlogData[] = [];
     blogDatas = await response.json();
+    
 
 
     return (
@@ -38,9 +40,13 @@ export default async function Blog() {
 
                 <div className="article-users">
                   <div className="users-name">
+                    <Image src="/icons/pen.svg" alt='author-name' width={16} height={16} className='author-logo'/>
                     {blogData.author}
                   </div>
-                  <div className="users-name">{blogData.date_published}</div>
+                  <div className="users-name">
+                    <Image src="/icons/calendar.svg" alt='author-name' width={16} height={16} className='author-logo'/ >
+                    {blogData.date_published}
+                  </div>
                 </div>
 
 
@@ -52,9 +58,9 @@ export default async function Blog() {
                   </p>
 
                 </div>
-                <a href="#" className="read-more">
+                <Link href="/Blog" className="read-more">
                   Read more
-                </a>
+                </Link>
               </div>
             ))}
           </article>

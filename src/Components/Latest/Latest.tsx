@@ -24,7 +24,7 @@ export default async function LatestProducts() {
                 className="productsImage"
                 width={416}
                 height={272}
-                priority
+                loading="lazy"
               />
             </div>
             <div className="card-content">

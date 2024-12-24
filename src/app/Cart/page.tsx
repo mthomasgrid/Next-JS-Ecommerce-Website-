@@ -14,7 +14,7 @@ interface CartItem {
 
 export default function Cart() {
   const router = useRouter();
-  // const [quantity, setQuantity] = useState(0);
+  
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   useEffect(() => {

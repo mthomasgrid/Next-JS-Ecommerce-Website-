@@ -22,7 +22,7 @@ const Unique = () => {
             className="banner-Sofa"
             width={519}
             height={488}
-            priority
+            loading="lazy"
           />
 
           <div className="ellipse61-banner"></div>
@@ -34,11 +34,15 @@ const Unique = () => {
           Unique Features Of Latest & Trending Poducts
         </h3>
         <ul className="banner-description">
-          <li>All frames constructed with hardwood solids and laminates</li>
-          <li>
+          <li> 
+            <Image src="/icons/reddot.svg" alt="red dot" width={11} height={12} className="list-dot"/>
+            All frames constructed with hardwood solids and laminates</li>
+        <li>
+            <Image src="/icons/violetdot.svg" alt="maroon dot" width={11} height={12} className="list-dot"/>
             Reinforced with double wood dowels, glue, screw - nails corner{" "}
           </li>
-          <li>Arms, backs and seats are structurally reinforced</li>
+          <li>
+          <Image src="/icons/greendot.svg" alt="Green dot" width={11} height={12} className="list-dot"/>Arms, backs and seats are structurally reinforced</li>
         </ul>
         <button className="cart-banner-btn" onClick={products}>Shop Now</button>
       </div>

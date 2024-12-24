@@ -1,4 +1,5 @@
 import "./Description.css";
+import Image from "next/image";
 
 export default function Description() {
   return (
@@ -31,94 +32,29 @@ export default function Description() {
           <div className="description-section-content-list">
             <ul>
               <li>
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 8.5L5.5 12L14 3.5"
-                    stroke="#8A8FB9"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+              <Image src="/icons/tickmark.svg" alt="Check Icon" width={16} height={16}  className="description-tick"/>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac
                 quam dolor. In dignissim lectus sed nisl tempor, ac porttitor
                 libero consectetur.
               </li>
               <li>
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 8.5L5.5 12L14 3.5"
-                    stroke="#8A8FB9"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+              <Image src="/icons/tickmark.svg" alt="Check Icon" width={16} height={16} className="description-tick"/>
                 Cras ac quam dolor. In dignissim lectus sed nisl tempor, ac
                 porttitor libero consectetur. Pellentesque diam dolor, tincidunt
                 nec ante.
               </li>
               <li>
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 8.5L5.5 12L14 3.5"
-                    stroke="#8A8FB9"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+              <Image src="/icons/tickmark.svg" alt="Check Icon" width={16} height={16} className="description-tick"/>
                 Pellentesque diam dolor, tincidunt nec ante congue, tincidunt
                 facilisis tortor.
               </li>
               <li>
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 8.5L5.5 12L14 3.5"
-                    stroke="#8A8FB9"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+              <Image src="/icons/tickmark.svg" alt="Check Icon" width={16} height={16} className="description-tick"/>
                 Mauris vitae massa molestie, sagittis ligula vel, egestas massa.
                 Phasellus quis sodales augue. Donec nec ultricies diam.
               </li>
               <li>
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 8.5L5.5 12L14 3.5"
-                    stroke="#8A8FB9"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+              <Image src="/icons/tickmark.svg" alt="Check Icon" width={16} height={16} className="description-tick"/>
                 Phasellus quis sodales augue. Integer feugiat odio ut dictum
                 viverra.
               </li>

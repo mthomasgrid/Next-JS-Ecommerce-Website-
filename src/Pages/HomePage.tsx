@@ -17,22 +17,25 @@ import LoadingSkeleton from "@/Components/Latest/loading";
 export default function HomePage() {
   return (
     <>
-        <Hero />
+      <Hero />
 
-        <Suspense fallback={<FeatureSkeleton />}>
-            <FeaturedProducts />
-        </Suspense>
+      <Suspense fallback={<FeatureSkeleton />}>
+        <FeaturedProducts />
+      </Suspense>
 
-        <Suspense fallback={<LoadingSkeleton />}>
-            <LatestProducts />
-        </Suspense>
+      <Suspense fallback={<LoadingSkeleton />}>
+        <LatestProducts />
+      </Suspense>
 
-        <Unique />
-        <TrendingProducts />
-        <DiscountItem />
-        <Categories />
-        <NewsLetter />
-        <Blog />
+      <Unique />
+      <TrendingProducts />
+      <DiscountItem />
+      <Categories />
+      <NewsLetter />
+
+      <Blog />
+
+
     </>
   );
 }

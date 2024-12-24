@@ -16,6 +16,7 @@
   justify-content: center;
   gap: 32px;
   padding-top: 20px;
+  cursor: pointer;
 }
 .discount-left-groups li {
   display: flex;

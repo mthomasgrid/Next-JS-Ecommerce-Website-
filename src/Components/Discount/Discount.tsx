@@ -30,53 +30,21 @@ export default function DiscountItem() {
           <div className="discount-left-groups">
             <ul className="discount-left-list">
               <li>
-                <svg
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 13.25L8.25 18.5L21 5.75" stroke="#101750" />
-                </svg>
+                <Image src="/icons/tickmark.svg" alt="Check Icon" width={24} height={25} />
                 Active Noise Cancellation
               </li>
               <li>
-                <svg
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 13.25L8.25 18.5L21 5.75" stroke="#101750" />
-                </svg>
+              <Image src="/icons/tickmark.svg" alt="Check Icon" width={24} height={25} />
                 Bluetooth Connectivity
               </li>
             </ul>
             <ul className="discount-left-list">
               <li>
-                <svg
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 13.25L8.25 18.5L21 5.75" stroke="#101750" />
-                </svg>
+              <Image src="/icons/tickmark.svg" alt="Check Icon" width={24} height={25} />
                 Comfortable Design
               </li>
               <li>
-                <svg
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M3 13.25L8.25 18.5L21 5.75" stroke="#101750" />
-                </svg>
+              <Image src="/icons/tickmark.svg" alt="Check Icon" width={24} height={25} />
                 Travel-Friendly
               </li>
             </ul>
@@ -93,7 +61,7 @@ export default function DiscountItem() {
               className="headphones"
               width={448}
               height={498}
-              priority
+              loading="lazy"
             />
 
             <div className="discount-right-ellipse61"></div>

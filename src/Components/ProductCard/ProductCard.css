@@ -1,12 +1,11 @@
 
 /*LIST VIEW CODE START*/
 .product-design{
-    border: 3px solid red;
+    /*List View*/
     
 }
 .product-card{
 
-    border: 3px solid blue;
     display: flex;
     gap: 40px;
     padding: 2rem;
