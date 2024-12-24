@@ -4,6 +4,8 @@ export default function FeatureSkeleton() {
   const skeletonCount = 4;
 
   return (
+    <>
+    <h2 className='featured__products'>Featured Products</h2>
     <div className="skeleton-container">
       {Array.from({ length: skeletonCount }).map((_, index) => (
         <div className="card skeleton" key={index}>
@@ -14,5 +16,6 @@ export default function FeatureSkeleton() {
         </div>
       ))}
     </div>
+    </>
   );
 }

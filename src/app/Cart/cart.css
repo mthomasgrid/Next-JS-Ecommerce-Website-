@@ -36,3 +36,135 @@ align-items: center;
     display: flex;
     justify-content: center;
 }
+
+/*ADDED  CODE*/
+
+.cart-added{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 30px;
+    padding: 30px;
+}
+.cart-added-left{
+    
+    width: 640px;
+
+}
+.cart-added-item1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+
+.box3{
+   
+    width: 120px;
+    height: 40px;
+    padding: 2px ;
+    border-radius: 8px;
+    border: 1px ;
+    justify-content: space-between;
+
+
+}
+
+.cart-added-items-description{
+    width: 89px;
+    height: 56px;
+}
+.cart-added-items-price{
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #101750;
+}
+.added-items-descrption{
+    display: flex;
+}
+
+.added-items-title{
+font-family: Josefin Sans;
+font-size: 22px;
+font-weight: 700;
+line-height: 28px;
+color: #101750;
+
+
+}
+.added-items-price{
+   
+font-family: Josefin Sans;
+font-size: 16px;
+font-weight: 400;
+margin-top: 3px;
+line-height: 20px;
+color: #101750;
+
+}
+
+.cart-added-right{
+    
+    width: 304px;
+    height: 254px;
+    gap: 0px;
+    border-radius: 8px;
+    background-color: #F8F8FD;
+    padding: 40px;
+
+}
+
+.right-item1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.vector-line{
+   
+    width: 315px;
+    text-align: center;
+    border: 1px solid #E5E0FC;
+
+    
+
+}
+
+
+/*Button COde*/
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #E5E0FC;
+    border-radius: 8px;
+    padding: 2px;
+
+  }
+  
+  
+  .counter-btn {
+    background-color: transparent;
+    border: none;
+    color: #101750; 
+    font-size: 20px;
+    font-weight: bold;
+    width: 30px;
+  }
+  
+  
+  
+ 
+  .counter-value {
+    font-size: 18px;
+    color: #0f172a; 
+    font-weight: bold;
+    width: 30px;
+    text-align: center;
+  }
+  

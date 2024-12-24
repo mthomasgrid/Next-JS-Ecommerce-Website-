@@ -1,8 +1,7 @@
-.category-section{
+.category-section {
     padding: 4rem;
-    
 }
-.category-title{
+.category-title {
     text-align: center;
     padding: 1rem;
     font-family: Josefin Sans;
@@ -11,20 +10,17 @@
     line-height: 52px;
     letter-spacing: 0.015em;
     color: #101750;
-
-} 
-.category-item{
+}
+.category-item {
     display: flex;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
     cursor: pointer;
 }
-
-
-.category-image{
+.category-image {
     border-radius: 100%;
 }
-.category-name{
+.category-name {
     text-align: center;
     font-family: Josefin Sans;
     font-size: 20px;
@@ -32,6 +28,6 @@
     line-height: 24px;
     color: #101750;
 }
-
- 
-
+.category-image-container {
+    text-decoration: none;
+}

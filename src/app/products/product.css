@@ -36,3 +36,15 @@ a{
 color:  #FB2E86;
 
 }
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 50px;
+}
+
+.icons{
+    gap: 40px;
+    justify-content: space-between;
+}
