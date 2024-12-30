@@ -12,7 +12,7 @@ export default async function Categories() {
       <h2 className="category-title">Top Categories</h2>
 
       <div className="category-item">
-        {products.slice(0, 4).map((product) => {
+        {products.slice(0, 4).filter((product) => product.rating.value > 3).map((product) => {
           return (
             <Link href={`/productdetails/${product.id}`} className="category-image-container" key={product.id}>
               <Image

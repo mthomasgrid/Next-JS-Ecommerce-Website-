@@ -11,7 +11,7 @@ export default async function LatestProducts() {
     <>
       <h2 className="latest__products">Latest Products</h2>
       <div className="card_fulldetails">
-        {products.slice(6, 12).map((product) => (
+        {products.slice(6, 20).filter((product) => product.rating.value > 3).map((product) => (
           <Link
             href={`/productdetails/${product.id}`}
             className="card2"

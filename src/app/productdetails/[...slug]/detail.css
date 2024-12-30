@@ -95,3 +95,16 @@ margin-top: 20px;
     margin-left: 20px;
     cursor: pointer;
 }
+
+
+
+
+.ratings-star-value-details{
+    filter: brightness(0.7) sepia(1) saturate(4);
+    margin-top: 15px;
+}
+.product-card-rating-title{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}

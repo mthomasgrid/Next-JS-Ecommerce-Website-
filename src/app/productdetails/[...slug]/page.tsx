@@ -32,6 +32,7 @@ interface Product {
   code: string;
   thumbnail: string;
   imageSet: string[];
+  rating:number;
 }
 
 export default async function ProductDetailspage({
@@ -81,12 +82,24 @@ export default async function ProductDetailspage({
 
           <div className="productdetails-right">
             <h3 className="productDetails-name">{product.name}</h3>
+            <p>
+                  {Array.from({ length: Math.floor(product.rating.value) }).map((_, index) => (
+                  <Image 
+                    key={index} 
+                    src="/icons/StarIcon.svg" 
+                    alt="star" 
+                    className="ratings-star-value-details" 
+                    width={20} 
+                    height={20} 
+                  />
+                ))}
+              </p>
             <div className="productDetails-price">
               <span className="productDetails-current-price">
                 ${product.price}
               </span>
               <span className="productDetails-original-price">
-                ${product.wasPrice}
+               <s>${product.wasPrice}</s> 
               </span>
             </div>
             <p className="productDetails-description">{product.description}</p>

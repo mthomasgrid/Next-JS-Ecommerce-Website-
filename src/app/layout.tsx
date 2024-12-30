@@ -24,7 +24,7 @@ const subFont = Lato({
 
 export const metadata: Metadata = {
   title: "Hekto-Ecommerce Website",
-  description: "Created By Melvin Thomas",
+  description: "Online Shopping site in India : Shop online for latest mobiles, laptops and accesories.",
 };
 
 export default function RootLayout({

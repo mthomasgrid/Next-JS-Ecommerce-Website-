@@ -90,3 +90,11 @@
 
 
 }
+
+.users-name{
+    display: flex;
+    justify-content: center;
+}
+.author-logo{
+    margin-right: 10px;
+}

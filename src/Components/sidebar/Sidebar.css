@@ -1,41 +1,102 @@
-.sidebar-section{
-    width:164px;
-    height: 1,303px;
-    top: 436px;
-    left: 304px;
-    gap: 48px;
-    padding: 2rem;
-    margin: 10px;
+.sidebar-section {
+  height: 1, 303px;
+  top: 436px;
+  left: 304px;
+  gap: 48px;
+  padding: 2rem;
 }
-.sidebar-title{
-font-family: Josefin Sans;
-font-size: 20px;
-font-weight: 700;
-line-height: 24px;
-text-align: left;
-color: #101750;
-margin-top: 25px;
-
-
+.sidebar-title {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #101750;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
-.sidebar-brand{
-    margin-top: 15px;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #8A8FB9;
-    display: flex;
-    gap: 20px;
+.sidebar-brand {
+  margin-top: 25px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #8a8fb9;
+  display: flex;
+  gap: 20px;
 }
 
-.sidebar-discount{
-    font-family: Josefin Sans;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: left;
-    color: #101750;
-    margin-top: 20px;
+.sidebar-discount {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #101750;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  background-color: #ddd6ff;
+  border: 1px solid #e0e3eb;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  padding: 3px;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 5px;
+  height: 10px;
+  bottom: 5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(50deg);
+}
+
+input[type="checkbox"]:checked {
+  background-color: #603eff;
+}
+
+input[type="checkbox"].categories {
+  background: #feb9c4;
+}
+input[type="checkbox"].categories:checked {
+  background-color: red;
+}
+
+input[type="checkbox"].ratings {
+  background: #fff3ce;
+}
+
+input[type="checkbox"].ratings:checked {
+  background-color: #f9ba00;
+  
+}
+
+.ratings-star-container {
+  filter: none;
+}
+
+input[type="checkbox"].ratings:checked + label .ratings-star-container {
+  filter: brightness(0.7) sepia(1) saturate(4);
+}
+
+.ratings-star {
+  margin-right: 4px;
 }

@@ -10,7 +10,7 @@ export default async function TrendingProducts() {
     <div className="products_container">
       <h2 className="trending__products">Trending Products</h2>
       <div className="card_details-card3">
-        {products.slice(21, 25).map((product) => (
+        {products.slice(31, 50).filter((product) => product.rating.value > 3).map((product) => (
           <Link href={`/productdetails/${product.id}`} key={product.id} className="card">
             <Image
               src={product.thumbnail}

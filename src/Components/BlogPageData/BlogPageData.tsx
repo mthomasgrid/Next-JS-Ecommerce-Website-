@@ -39,9 +39,12 @@ export default async function BlogPage(){
     
                         <div className="article-users">
                             <div className="users-name">
+                            <Image src="/icons/pen.svg" alt='author-name' width={16} height={16} className='author-logo'/>
                                 {blogData.author}
                             </div>
-                            <div className="users-name">{blogData.date_published}</div>
+                            <div className="users-name">
+                              <Image src="/icons/calendar.svg" alt='author-name' width={16} height={16} className='author-logo'/ >
+                              {blogData.date_published}</div>
                         </div>
     
     
