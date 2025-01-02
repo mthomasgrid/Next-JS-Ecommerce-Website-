@@ -10,6 +10,12 @@ export default async function LatestProducts() {
   return (
     <>
       <h2 className="latest__products">Latest Products</h2>
+      <div className="latest-links">
+        <Link href="/" className="link-latest active">New arrival</Link>
+        <Link href="/" className="link-latest">Best Seller</Link>
+        <Link href="/" className="link-latest">Featured</Link>
+        <Link href="/" className="link-latest">Special Offer</Link>
+      </div>
       <div className="card_fulldetails">
         {products.slice(6, 20).filter((product) => product.rating.value > 3).map((product) => (
           <Link

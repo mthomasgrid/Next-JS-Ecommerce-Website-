@@ -55,7 +55,33 @@ export default async function ProductCard({ products }: ProductCardProps) {
                 <p className="product-card-right-description">
                   {product.description} 
                 </p>
+
+                <div className="product-card-right-icon">
+                    <Image
+                      src="/icons/AddToCart.svg"
+                      alt="Favorite"
+                      width={32}
+                      height={32}
+                    />
+
+                    <Image
+                      src="/icons/AddToFav.svg"
+                      alt="Favorite"
+                      width={32}
+                      height={32}
+                    />
+
+                    <Image
+                      src="/icons/Zoom.svg"
+                      alt="Favorite"
+                      width={32}
+                      height={32}
+                    />
+                  </div> 
               </div>
+
+
+              
             </Link>
           ))}
         </div> 

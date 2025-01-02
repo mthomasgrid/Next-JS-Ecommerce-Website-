@@ -8,7 +8,13 @@ import Link from "next/link";
 import PerPage from "@/Components/PerPage/Perpage";
 
 export default async function ProductsPage() {
-  const products: Product[] = await fetchProducts();
+  let products: Product[] = [];
+  try {
+    products = await fetchProducts();
+  } catch (error) {
+    console.error("Failed to fetch products:", error);
+  }
+
   
 
   return (
@@ -31,10 +37,11 @@ export default async function ProductsPage() {
 
         <div className="select-container">
           <span className="select-option">Sort By</span>
-          <select className="page-values-price" defaultValue="price-high-to-low">
-            <option value="price-high-to-low">Price: High - Low</option>
-            <option value="price-low-to-high">Price: Low - High</option>
+          <select className="page-values-price">
+              <option value="price-high-to-low">Price: High - Low</option>
+              <option value="price-low-to-high">Price: Low - High</option>
           </select>
+
         </div>
 
         <div className="view-container">

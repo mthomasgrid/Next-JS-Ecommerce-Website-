@@ -8,7 +8,6 @@
     justify-content: space-evenly; 
     padding: 4rem;
     gap: 30px;
-    cursor: pointer;
 }
 
 .card2 {
@@ -105,4 +104,25 @@
   }
   
  
-  
+
+  .latest-links{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  .link-latest{
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #101750;
+  }
+  .active{
+    color: #FB2E86;
+  }
+  .link-latest:hover{
+    color: #FB2E86;
+  }

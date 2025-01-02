@@ -24,8 +24,17 @@ export default function Cart() {
     }
   }, []);
 
+
+
+
   const gotoHome = () => {
     router.push('/products');
+  };
+
+
+  const clearCart = () => {
+    setCartItems([]); 
+    localStorage.removeItem("cart"); 
   };
 
   const increment = (itemId: string) => {
@@ -122,7 +131,6 @@ export default function Cart() {
               <p>Shipping</p>
               <p className="box4 added-items-price">$100.00</p>
             </div>
-            
             <div className="vector-line"></div>
             <div className="right-item1">
               <p>Total</p>
@@ -130,8 +138,12 @@ export default function Cart() {
                 ${Total}
               </p>
             </div>
+            <button className="checkout">Proceed to checkout</button>
+            <p className="clear-cart" onClick={clearCart}>Clear Cart</p>
           </div>
+         
         </div>
+        
       )}
     </>
   );

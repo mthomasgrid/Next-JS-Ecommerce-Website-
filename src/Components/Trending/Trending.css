@@ -3,18 +3,18 @@
 }
 .card{
     box-shadow: 8px 24px 32px -16px #10175026;
-    cursor: pointer;
 }
 .card_details-card3{
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 60px;
+    height: 310px;
+
 }
 .products-card3{
-    width: 272px;
+    width: 280px;
     height: 232px;
-    border-radius: 5px;
 }
 .card_title-card3{
     text-align: center;
