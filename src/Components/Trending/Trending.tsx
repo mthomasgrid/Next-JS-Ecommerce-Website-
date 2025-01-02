@@ -5,12 +5,12 @@ import Link from "next/link";
 
 export default async function TrendingProducts() {
   const products: Product[] = await fetchProducts();
-  //await new Promise((resolve) => setTimeout(resolve, 9000));
+ 
   return (
     <div className="products_container">
       <h2 className="trending__products">Trending Products</h2>
       <div className="card_details-card3">
-        {products.slice(21, 25).map((product) => (
+        {products.slice(31, 50).filter((product) => product.rating.value > 3).map((product) => (
           <Link href={`/productdetails/${product.id}`} key={product.id} className="card">
             <Image
               src={product.thumbnail}
@@ -18,6 +18,7 @@ export default async function TrendingProducts() {
               width={150}
               height={150}
               className="products-card3"
+              priority
             />
             <h3 className="card_title-card3">{product.category}</h3>
             <div className="price-container-card3">

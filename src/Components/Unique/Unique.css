@@ -1,6 +1,6 @@
 .banner{
    
-    height: 570px;
+    height: 480px;
     background-color: #F1F0FF;
     display: flex;
     justify-content: center;
@@ -73,4 +73,9 @@
     line-height: 20px;
     text-align: left;
     margin-left: 20px;
+}
+
+.list-dot{
+margin-right: 10px;
+align-items: center;
 }

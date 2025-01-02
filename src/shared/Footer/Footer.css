@@ -89,7 +89,7 @@
   align-items: center;
   cursor: pointer;
 }
-.footer-logos svg {
+.footer-logos {
   margin: 7px;
 }
 .footer-content {
@@ -99,4 +99,8 @@
   line-height: 16px;
   text-align: left;
   color: #8a8fb9;
+}
+
+.foot-logo{
+  margin: 7px;
 }

@@ -1,25 +1,30 @@
 import type { Metadata } from "next";
 
-
-import {Josefin_Sans,Lato} from 'next/font/google'
+//Font Name
+import { Josefin_Sans, Lato } from "next/font/google";
 import "./globals.css";
+
+//Importing Header and Footer
 import Header from "@/shared/Header/Header";
 import Footer from "@/shared/Footer/Footer";
 
-const  mainFont=Josefin_Sans({
-  subsets:["latin"],
-  display:"swap",
-})
 
-const subFont=Lato({
-  subsets:["latin"],
-  display:"swap",
-  weight:"400",
-})
+//Font1
+const mainFont = Josefin_Sans({
+  subsets: ["latin"],
+  display: "swap",
+});
+
+//Font2
+const subFont = Lato({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Hekto-Ecommerce Website",
-  description: "Created By Melvin Thomas",
+  description: "Online Shopping site in India : Shop online for latest mobiles, laptops and accesories.",
 };
 
 export default function RootLayout({
@@ -30,9 +35,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${mainFont.className} ${subFont.className}`}>
-        <Header/>
+        <Header />
         {children}
-         <Footer/>  
+        <Footer />
       </body>
     </html>
   );

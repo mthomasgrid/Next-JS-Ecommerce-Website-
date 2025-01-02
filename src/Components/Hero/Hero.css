@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   background: #f2f0ff;
-  height: 670px;
+  height: 680px;
 }
 .container {
   overflow: hidden;
@@ -32,7 +32,7 @@
   font-weight: bold;
   margin: 0;
   font-family: Josefin Sans;
-  font-size: 44px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 64px;
   letter-spacing: 0.015em;
@@ -118,4 +118,32 @@
 }
 .left-image {
   width: 350px;
+}
+.pagination-carousel {
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  top: 89%;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle-carousel-active {
+  width: 12px;
+  height: 12px;
+  background-color: #fb2e86;
+  border: 1px solid #fb2e86;
+  transform: rotate(45deg); 
+  cursor: pointer;
+}
+.rectangle-carousel:hover{
+  background-color: #fb2e86;
+}
+.rectangle-carousel{
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fb2e86;
+  transform: rotate(45deg); 
+  cursor: pointer;
 }

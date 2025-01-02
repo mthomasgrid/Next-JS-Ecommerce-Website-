@@ -37,22 +37,52 @@ export default async function RelatedProducts() {
         {products.slice(0, 4).map((product) => {
             
             return (
-              <Link
-                href={`/productdetails/${product.id}`}
-                key={product.id}
-                className="card"
-              >
-                <Image
-                  src={product.thumbnail}
-                  alt={`Product -- ${product.category}`}
-                  width={150}
-                  height={150}
-                  className="products"
-                />
+              <div key={product.id} className="card">
+               
+              <div className="related-content"> 
+                <div className="image-container">
+                  <Image
+                    src={product.thumbnail}
+                    alt={`Product -- ${product.category}`}
+                    width={150}
+                    height={150}
+                    className="products"
+                    loading="lazy"
+                  />
+                  <Link href={`/productdetails/${product.id}`}>
+                    <button className="related-container-button">
+                      View Details
+                    </button>
+                  </Link>
+                </div>
+
+
+                <div className="product-card-right-icon">
+                  <Image
+                    src="/icons/AddToCart.svg"
+                    alt="Add to Cart"
+                    width={32}
+                    height={32}
+                  />
+                  <Image
+                    src="/icons/AddToFav.svg"
+                    alt="Add to Favorite"
+                    width={32}
+                    height={32}
+                  />
+                  <Image
+                    src="/icons/Zoom.svg"
+                    alt="Zoom"
+                    width={32}
+                    height={32}
+                  />
+                </div>
+              </div>
+
                 <h3 className="card_title">{product.category}</h3>
                 <p className="card_code">{product.code}</p>
                 <p className="card_price">${product.price}</p>
-              </Link>
+              </div>
             );
           })}
         </div>
